@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JosephusPaye/Keen-UI.git"
+    "url": "git+ssh://git@github.com:windjammertechnologies/Keen-UI.git"
   },
   "keywords": [
     "vue",
@@ -37,10 +37,7 @@
     "name": "Josephus Paye II"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JosephusPaye/Keen-UI/issues"
-  },
-  "homepage": "https://github.com/JosephusPaye/Keen-UI/",
+  "homepage": "https://github.com/windjammertechnologies/Keen-UI",
   "dependencies": {
     "autosize": "^3.0.20",
     "deep-assign": "^2.0.0",

@@ -9,6 +9,8 @@
         :type="buttonType"
 
         @click="onClick"
+        @mousedown="onMouseDown"
+        @mouseup="onMouseUp"
     >
         <div class="ui-icon-button__icon" v-if="icon || $slots.default">
             <slot>
@@ -148,6 +150,12 @@ export default {
     methods: {
         onClick(e) {
             this.$emit('click', e);
+        },
+        onMouseDown(e) {
+            this.$emit('mousedown', e);
+        },
+        onMouseUp(e) {
+            this.$emit('mouseup', e);
         },
 
         onDropdownOpen() {
