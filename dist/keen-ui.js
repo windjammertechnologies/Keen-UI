@@ -15067,7 +15067,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "readonly": _vm.readonly,
       "required": _vm.required,
       "step": _vm.stepValue,
-      "type": _vm.type
+      "type": _vm.type,
+      "draggable": "true"
     },
     domProps: {
       "value": _vm.value
@@ -15082,7 +15083,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "keydown": [function($event) {
         if (!('button' in $event) && _vm._k($event.keyCode, "enter", 13)) { return null; }
         _vm.onKeydownEnter($event)
-      }, _vm.onKeydown]
+      }, _vm.onKeydown],
+      "dragstart": function($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+      }
     }
   }) : _c('textarea', {
     directives: [{

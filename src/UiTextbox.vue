@@ -41,6 +41,9 @@
                     @keydown.enter="onKeydownEnter"
                     @keydown="onKeydown"
 
+                    draggable="true"
+                    @dragstart.prevent.stop
+
                     v-autofocus="autofocus"
                     v-if="!multiLine"
                 >
